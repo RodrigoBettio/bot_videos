@@ -5,7 +5,7 @@ import os
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path='../../.env') 
+load_dotenv() 
 bot = telebot.TeleBot(os.getenv('CHAVE_API'))
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
